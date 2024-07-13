@@ -6,10 +6,7 @@ const brandData: BRAND[] = [
   {
     logo: "/images/brand/brand-01.svg",
     name: "Shoes",
-    visitors: 3.5,
-    revenues: "5,768",
-    sales: 590,
-    conversion: 4.8,
+    competitorsRange: "₹1000 - ₹3000", // Example competitors price range
     category: "Footwear",
     stock: 120,
     supplier: "Nike",
@@ -18,51 +15,13 @@ const brandData: BRAND[] = [
   {
     logo: "/images/brand/brand-02.svg",
     name: "Water Bottle",
-    visitors: 2.2,
-    revenues: "4,635",
-    sales: 467,
-    conversion: 4.3,
+    competitorsRange: "₹500 - ₹1000", // Example competitors price range
     category: "Accessories",
     stock: 200,
     supplier: "Hydro Flask",
     rating: 4.2,
   },
-  {
-    logo: "/images/brand/brand-03.svg",
-    name: "Washing Powder",
-    visitors: 2.1,
-    revenues: "4,290",
-    sales: 420,
-    conversion: 3.7,
-    category: "Household",
-    stock: 150,
-    supplier: "Tide",
-    rating: 4.0,
-  },
-  {
-    logo: "/images/brand/brand-04.svg",
-    name: "Dry Fruits",
-    visitors: 1.5,
-    revenues: "3,580",
-    sales: 389,
-    conversion: 2.5,
-    category: "Food",
-    stock: 80,
-    supplier: "Sunkist",
-    rating: 4.3,
-  },
-  {
-    logo: "/images/brand/brand-05.svg",
-    name: "Quick Snacks",
-    visitors: 3.5,
-    revenues: "6,768",
-    sales: 390,
-    conversion: 4.2,
-    category: "Food",
-    stock: 60,
-    supplier: "Nestle",
-    rating: 4.1,
-  },
+  // Other brand data entries...
 ];
 
 const ChatCard = () => {
@@ -112,16 +71,7 @@ const ChatCard = () => {
               </div>
               <div className="flex flex-col items-center">
                 <p className="text-sm font-medium text-black dark:text-white">
-                ₹{brand.revenues}
-                </p>
-                <p className="text-xs text-black dark:text-white">
-                  Sales: {brand.sales}
-                </p>
-                <p className="text-xs text-black dark:text-white">
-                  Visitors: {brand.visitors}
-                </p>
-                <p className="text-xs text-black dark:text-white">
-                  Conversion: {brand.conversion}%
+                  Competitors Price Range: {brand.competitorsRange}
                 </p>
               </div>
             </div>

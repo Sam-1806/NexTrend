@@ -1,13 +1,14 @@
 import { ApexOptions } from "apexcharts";
 import React from "react";
 import dynamic from "next/dynamic";
+import Link from "next/link";
 
 const ReactApexChart = dynamic(() => import("react-apexcharts"), {
   ssr: false,
 });
 
 const optionsChartThree: ApexOptions = {
-  colors: ["#10B981", "#3C50E0","#bd24e3","#dba435"],
+  colors: ["#10B981", "#3C50E0", "#bd24e3", "#dba435"],
   chart: {
     fontFamily: "Satoshi, sans-serif",
     height: 335,
@@ -32,10 +33,10 @@ const optionsChartThree: ApexOptions = {
       },
     },
   },
-  labels: ["Groceries", "Acessories","Office Supplies","Tech"],
+  labels: ["Groceries", "Acessories", "Office Supplies", "Tech"],
 };
 
-const seriesChartThree = [58.3,25.6,15.2,8.9];
+const seriesChartThree = [58.3, 25.6, 15.2, 8.9];
 
 const ChartThree: React.FC = () => {
   return (
@@ -46,6 +47,18 @@ const ChartThree: React.FC = () => {
             Sales Overview
           </h4>
         </div>
+        <div className="flex flex-col gap-4">
+          <Link href="http://localhost:8501/">
+            <button className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
+              View More analytics/ Forecast Demand
+            </button>
+          </Link>
+          <Link href="http://localhost:8501/page2">
+            <button className="px-4 py-2 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75">
+              Go to Streamlit Page 2
+            </button>
+          </Link>
+        </div>
       </div>
       <div id="chartThree">
         <ReactApexChart
@@ -53,7 +66,7 @@ const ChartThree: React.FC = () => {
           series={seriesChartThree}
           type="radialBar"
           height={350}
-          width={"50%"}
+          width={"100%"}
         />
       </div>
     </div>

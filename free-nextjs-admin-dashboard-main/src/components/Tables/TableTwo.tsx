@@ -4,35 +4,35 @@ import { Product } from "@/types/product";
 const productData: Product[] = [
   {
     image: "/images/product/product-01.png",
-    name: "Apple Watch Series 7",
+    name: "EarBuds- BOAT",
     category: "Electronics",
-    price: 296,
+    price: 1109,
     sold: 22,
-    profit: 45,
+    competitorsPriceRange: "₹1500-₹2500", // Example competitors price range
   },
   {
     image: "/images/product/product-02.png",
-    name: "Macbook Pro M1",
-    category: "Electronics",
-    price: 546,
+    name: "NoteBook Set",
+    category: "Daily Essentials",
+    price: 300,
     sold: 12,
-    profit: 125,
+    competitorsPriceRange: "₹360 - ₹400", // Example competitors price range
   },
   {
     image: "/images/product/product-03.png",
-    name: "Dell Inspiron 15",
+    name: "Lighting",
     category: "Electronics",
-    price: 443,
+    price: 999,
     sold: 64,
-    profit: 247,
+    competitorsPriceRange: "₹800 - ₹3000", // Example competitors price range
   },
   {
     image: "/images/product/product-04.png",
-    name: "HP Probook 450",
-    category: "Electronics",
-    price: 499,
+    name: "Rice",
+    category: "Groceries",
+    price: 72,
     sold: 72,
-    profit: 103,
+    competitorsPriceRange: "₹70 per kilo", // Example competitors price range
   },
 ];
 
@@ -59,7 +59,7 @@ const TableTwo = () => {
           <p className="font-medium">Sold</p>
         </div>
         <div className="col-span-1 flex items-center">
-          <p className="font-medium">Profit</p>
+          <p className="font-medium">Competitors Price Range</p>
         </div>
       </div>
 
@@ -90,14 +90,16 @@ const TableTwo = () => {
           </div>
           <div className="col-span-1 flex items-center">
             <p className="text-sm text-black dark:text-white">
-              ${product.price}
+            ₹{product.price}
             </p>
           </div>
           <div className="col-span-1 flex items-center">
             <p className="text-sm text-black dark:text-white">{product.sold}</p>
           </div>
           <div className="col-span-1 flex items-center">
-            <p className="text-sm text-meta-3">${product.profit}</p>
+            <p className="text-sm text-black dark:text-white">
+              {product.competitorsPriceRange}
+            </p>
           </div>
         </div>
       ))}

@@ -37,9 +37,7 @@ const Alerts = () => {
                 Attention needed
               </h5>
               <p className="leading-relaxed text-[#D0915C]">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry. Lorem Ipsum has been the industry&apos;s standard
-                dummy text ever since the 1500s, when
+              Alert!‼ Sales demand might increase by 20% next month. Increase your prices now to maximize profits, or you might miss out on that dream vacation!
               </p>
             </div>
           </div>
@@ -62,11 +60,10 @@ const Alerts = () => {
             </div>
             <div className="w-full">
               <h5 className="mb-3 text-lg font-semibold text-black dark:text-[#34D399] ">
-                Message Sent Successfully
+              Opportunity Alert! 💰
               </h5>
               <p className="text-base leading-relaxed text-body">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-                industry.
+              Competitors have raised prices by 15%. Adjust your pricing to stay competitive and boost your margins
               </p>
             </div>
           </div>
@@ -89,11 +86,11 @@ const Alerts = () => {
             </div>
             <div className="w-full">
               <h5 className="mb-3 font-semibold text-[#B45454]">
-                There were 1 errors with your submission
+              Urgent! 🚨
               </h5>
               <ul>
                 <li className="leading-relaxed text-[#CD5D5D]">
-                  Lorem Ipsum is simply dummy text of the printing
+                Your inventory levels are 30% below the required threshold. Restock immediately to avoid stockouts and lost sales!
                 </li>
               </ul>
             </div>
