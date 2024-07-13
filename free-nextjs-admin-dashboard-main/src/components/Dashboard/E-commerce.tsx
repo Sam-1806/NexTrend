@@ -4,6 +4,7 @@ import React, { useEffect, useState } from "react";
 import ChartOne from "../Charts/ChartOne";
 import ChartTwo from "../Charts/ChartTwo";
 import ChatCard from "../Chat/ChatCard";
+import Histochart from "../Charts/Histochart";
 import TableOne from "../Tables/TableOne";
 import CardDataStats from "../CardDataStats";
 import Papa from "papaparse";
@@ -65,11 +66,13 @@ const ECommerce: React.FC = () => {
         <ChartTwo data={data} />
         <ChartThree data={data} />
         
-        <MapOne />
+        {/* <MapOne /> */}
         <div className="col-span-12 xl:col-span-8">
           <TableOne data={data} />
         </div>
         <ChatCard />
+        <Histochart />
+
       </div>
     </>
   );
