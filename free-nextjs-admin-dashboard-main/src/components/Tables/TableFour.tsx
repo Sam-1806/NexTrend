@@ -5,7 +5,7 @@ import DropdownDefault from "../Dropdowns/DropdownDefault";
 const brandData: BRAND[] = [
   {
     logo: "/images/brand/brand-01.svg",
-    name: "Google",
+    name: "Shoes",
     visitors: 3.5,
     revenues: "5,768",
     sales: 590,
@@ -62,12 +62,12 @@ const TableFour: React.FC = () => {
           <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-4">
             <div className="p-2.5 xl:p-4">
               <h5 className="text-sm font-medium uppercase xsm:text-base">
-                Source
+                Item
               </h5>
             </div>
             <div className="p-2.5 text-center xl:p-4">
               <h5 className="text-sm font-medium uppercase xsm:text-base">
-                Visitors
+                Inventory 
               </h5>
             </div>
             <div className="p-2.5 text-center xl:p-4">

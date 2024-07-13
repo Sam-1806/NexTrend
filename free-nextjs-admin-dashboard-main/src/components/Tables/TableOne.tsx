@@ -4,7 +4,7 @@ import Image from "next/image";
 const brandData: BRAND[] = [
   {
     logo: "/images/brand/brand-01.svg",
-    name: "Google",
+    name: " Shoes",
     visitors: 3.5,
     revenues: "5,768",
     sales: 590,
@@ -12,7 +12,7 @@ const brandData: BRAND[] = [
   },
   {
     logo: "/images/brand/brand-02.svg",
-    name: "Twitter",
+    name: "Water Bottle",
     visitors: 2.2,
     revenues: "4,635",
     sales: 467,
@@ -20,7 +20,7 @@ const brandData: BRAND[] = [
   },
   {
     logo: "/images/brand/brand-03.svg",
-    name: "Github",
+    name: "Washing Powder",
     visitors: 2.1,
     revenues: "4,290",
     sales: 420,
@@ -28,7 +28,7 @@ const brandData: BRAND[] = [
   },
   {
     logo: "/images/brand/brand-04.svg",
-    name: "Vimeo",
+    name: "Dry Fruits",
     visitors: 1.5,
     revenues: "3,580",
     sales: 389,
@@ -36,7 +36,7 @@ const brandData: BRAND[] = [
   },
   {
     logo: "/images/brand/brand-05.svg",
-    name: "Facebook",
+    name: "Quick Snacks",
     visitors: 3.5,
     revenues: "6,768",
     sales: 390,
@@ -55,12 +55,12 @@ const TableOne = () => {
         <div className="grid grid-cols-3 rounded-sm bg-gray-2 dark:bg-meta-4 sm:grid-cols-5">
           <div className="p-2.5 xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Source
+              Item
             </h5>
           </div>
           <div className="p-2.5 text-center xl:p-5">
             <h5 className="text-sm font-medium uppercase xsm:text-base">
-              Visitors
+              Inventory
             </h5>
           </div>
           <div className="p-2.5 text-center xl:p-5">

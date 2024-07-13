@@ -64,6 +64,7 @@ const ECommerce: React.FC = () => {
         <ChartOne data={data} />
         <ChartTwo data={data} />
         <ChartThree data={data} />
+        
         <MapOne />
         <div className="col-span-12 xl:col-span-8">
           <TableOne data={data} />

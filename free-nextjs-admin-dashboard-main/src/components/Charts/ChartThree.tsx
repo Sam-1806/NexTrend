@@ -7,7 +7,7 @@ const ReactApexChart = dynamic(() => import("react-apexcharts"), {
 });
 
 const optionsChartThree: ApexOptions = {
-  colors: ["#10B981", "#3C50E0"],
+  colors: ["#10B981", "#3C50E0","#bd24e3","#dba435"],
   chart: {
     fontFamily: "Satoshi, sans-serif",
     height: 335,
@@ -32,10 +32,10 @@ const optionsChartThree: ApexOptions = {
       },
     },
   },
-  labels: ["Apples", "Oranges"],
+  labels: ["Groceries", "Acessories","Office Supplies","Tech"],
 };
 
-const seriesChartThree = [67, 84];
+const seriesChartThree = [58.3,25.6,15.2,8.9];
 
 const ChartThree: React.FC = () => {
   return (
@@ -53,7 +53,7 @@ const ChartThree: React.FC = () => {
           series={seriesChartThree}
           type="radialBar"
           height={350}
-          width={"100%"}
+          width={"50%"}
         />
       </div>
     </div>
