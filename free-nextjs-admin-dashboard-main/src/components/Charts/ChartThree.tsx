@@ -48,14 +48,14 @@ const ChartThree: React.FC = () => {
           </h4>
         </div>
         <div className="flex flex-col gap-4">
-          <Link href="http://localhost:8501/">
+          <Link href="http://localhost:8502">
             <button className="px-4 py-2 bg-blue-500 text-white font-semibold rounded-lg shadow-md hover:bg-blue-700 focus:outline-none focus:ring-2 focus:ring-blue-400 focus:ring-opacity-75">
               View More analytics/ Forecast Demand
             </button>
           </Link>
-          <Link href="http://localhost:8501/page2">
+          <Link href="http://localhost:8501">
             <button className="px-4 py-2 bg-green-500 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-400 focus:ring-opacity-75">
-              Go to Streamlit Page 2
+              Go to ChatBot
             </button>
           </Link>
         </div>

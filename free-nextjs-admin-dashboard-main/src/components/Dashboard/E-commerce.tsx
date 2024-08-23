@@ -4,7 +4,7 @@ import React, { useEffect, useState } from "react";
 import ChartOne from "../Charts/ChartOne";
 import ChartTwo from "../Charts/ChartTwo";
 import ChatCard from "../Chat/ChatCard";
-import Histochart from "../Charts/Histochart";
+//import Histochart from "../Charts/Histochart";
 import TableOne from "../Tables/TableOne";
 import CardDataStats from "../CardDataStats";
 import Papa from "papaparse";
@@ -26,16 +26,16 @@ const ECommerce: React.FC = () => {
     Papa.parse("free-nextjs-admin-dashboard-main/public/Superstore_CSV.csv", {
       download: true,
       header: true,
-      complete: (results) => {
+      complete: (results:any) => {
         setData(results.data);
         calculateTotalProfit(results.data);
       },
     });
   }, []);
 
-  const calculateTotalProfit = (data) => {
+  const calculateTotalProfit = (data:any) => {
     // Calculate the total profit from the CSV data
-    const profit = data.reduce((acc, item) => acc + parseFloat(item.profit), 0);
+    const profit = data.reduce((acc:any, item:any) => acc + parseFloat(item.profit), 0);
     setTotalProfit(profit);
   };
 
